@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MoqTests
+﻿namespace MoqTests
 {
+    using System;
     using CodeBase;
-    using NUnit.Framework;
     using Moq;
+    using NUnit.Framework;
 
     [TestFixture]
     public class TestsTranslator
