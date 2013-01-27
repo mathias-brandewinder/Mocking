@@ -4,6 +4,8 @@
 
     public class Translator
     {
+        public const string ErrorMessage = "Translation failure";
+
         private readonly ILogger logger;
         private readonly IService service;
 
@@ -22,7 +24,7 @@
             catch (Exception exception)
             {
                 this.logger.Log(exception);
-                throw;
+                return ErrorMessage;
             }
         }
     }
